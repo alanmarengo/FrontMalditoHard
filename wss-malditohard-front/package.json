@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "env-cmd": "^10.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -15,7 +16,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:local": "env-cmd -f ./config/.env.local react-scripts start",
+    "start:dev": "env-cmd -f ./config/.env.dev react-scripts start",
+    "start:prod": "env-cmd -f ./config/.env.prod react-scripts start"
   },
   "eslintConfig": {
     "extends": [
